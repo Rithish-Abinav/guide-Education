@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assests/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="header">
+       <div class="logo">
+        <div class="image"></div>
+        <h2>Guide</h2>
+       </div>
+       <div class="nav">
+        <ul>
+            <li><a id="home" href="#">Home</a> </li>
+            <li  id="course"><a href="#" id="c-a"> Courses</a>
+            <ul id="sub"><li>Course 1</li>
+            <li>course 2</li>
+        <li>course 3</li></ul></li>
+            <li><a href="#"> Mentors</a></li>
+            <li><a href="#"> Testimonials</a></li>
+            <li><a href="#"> Blogs</a></li>
+            <li><a href="#"> Contact</a></li>
+        </ul>
+       </div>
+       <div class="nav-btn">
+        <button>Sign up</button>
+       </div>
+    </div>
+
+    <div class="banner">
+
+<h1>Lets's learn about new knowledge and abilities</h1>
+<p>Lets discover new knowledge and new friends and have a strong learning experience with beautiful teachers</p>
+<div class="buttons">
+    <button id="get-started">Get Started</button>
+    <button id="watch-videos">Watch Videos</button>
+</div>
+
+
+    <div class="images">
+        <div class="image1"></div>
+        <div class="image2"></div>
+        <div class="image3"></div>
+        <div class="image4"></div>
+    </div>
+
+
+
+    <div class="companies">
+        <p>Trusted by several unicorn companies</p>
+        <div class="company1">
+            <img src="assests/images/company1.png">
+        </div>
+        <div class="company2">
+            <img src="assests/images/company2.png">
+        </div>
+        <div class="company3">
+            <img src="assests/images/company3.png">
+        </div>
+        <div class="company4">
+            <img src="assests/images/COMPANY4.png">
+        </div>
+        <div class="company5">
+            <img src="assests/images/company5.png">
+        </div>
+    </div>
+
+    <div class="ball1"></div>
+    <div class="ball2"></div>
+    <div class="ball3"></div>
+    <div class="ball4"></div>
+    <div class="ball5"></div>
+    <div class="ball6"></div>
+    <div class="ball7"></div>
+
+    </div>
+
+<script>
+    gsap.to(".image2",{
+        translateY:"0%",
+        scrollTrigger:{
+            trigger:".banner",
+            start:"center 70%",
+            end:"center 20%",
+            scrub:true
+        }
+    })
+    gsap.to(".image3",{
+        translateY:"0%",
+        scrollTrigger:{
+            trigger:".banner",
+            start:"center 70%",
+            end:"center 20%",
+            scrub:true
+        }
+    })
+    gsap.to(".image1",{
+        translateY:"30%",
+        scrollTrigger:{
+            trigger:".banner",
+            start:"center 70%",
+            end:"center 20%",
+      
+            scrub:true
+        }
+    })
+    gsap.to(".image4",{
+        translateY:"30%",
+        scrollTrigger:{
+            trigger:".banner",
+            start:"center 70%",
+            end:"center 20%",
+           
+            scrub:true
+        }
+    })
+    gsap.to(".ball7",{
+       top:"90%",
+        scrollTrigger:{
+            trigger:".banner",
+            start:"center 70%",
+            end:"center 20%",
+          
+            scrub:true
+        }
+    })
+    gsap.to(".ball3",{
+        bottom:"10%",
+        scrollTrigger:{
+            trigger:".banner",
+            start:"center 70%",
+            end:"center 20%",
+           
+            scrub:true
+        }
+    })
+    gsap.to(".ball5",{
+       top:"35%",
+        scrollTrigger:{
+            trigger:".banner",
+            start:"center 70%",
+            end:"center 20%",
+         
+            scrub:true
+        }
+    })
+    gsap.to(".ball3",{
+       bottom:"5%",
+        scrollTrigger:{
+            trigger:".banner",
+            start:"center 70%",
+            end:"center 20%",
+         
+            scrub:true
+        }
+    })
+    
+</script>
+
+
+
+<div class="how">
+    <p id="how">HOW ITS WORK</p>
+    <h2>How is our tutoring  services?</h2>
+
+    <div class="cards">
+        <div class="card1">
+            <div class="image">
+                <img src="assests/images/icons8-facebook-like-96.png">
+            </div>
+            <div class="content">
+            <h4>Relaxing and Learning</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi explicabo accusantiumanditiis totam ad perspiciatis sint autem! Ab, natus. Doloremque.</p>
+            <a href="#">Read more</a>
+        </div>
+        </div>
+
+        <div class="card2">
+            <div class="image">
+                <img src="assests/images/icons8-graduation-cap-100.png">
+            </div>
+            <div class="content">
+            <h4>Certificate</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi explicabo accusantiumanditiis totam ad perspiciatis sint autem! Ab, natus. Doloremque.</p>
+            <a href="#">Read more</a>
+        </div>
+        </div>
+
+        <div class="card3">
+            <div class="image">
+                <img src="assests/images/icons8-medal-and-certificate-folder-96.png">
+            </div>
+            <div class="content">
+            <h4>Private Mentoring</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi explicabo accusantiumanditiis totam ad perspiciatis sint autem! Ab, natus. Doloremque.</p>
+            <a href="#">Read more</a>
+        </div>
+        </div>
+
+        <div class="card4">
+            <div class="image">
+                <img src="assests/images/icons8-smiling-face-with-heart-100.png">
+            </div>
+            <div class="content">
+            <h4>Creative Thinking</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi explicabo accusantiumanditiis totam ad perspiciatis sint autem! Ab, natus. Doloremque.</p>
+            <a href="#">Read more</a>
+        </div>
+        </div>
+    </div>
+
+    <div class="ball11"></div>
+    <div class="ball22"></div>
+    <div class="ball33"></div>
+
+
+</div>
+<script>
+    gsap.from(".card2",{
+        translateX:"-700px",
+        scrollTrigger:{
+            trigger:".how",
+            start:"top 40%",
+            end:"top 10%",
+            scrub:true
+        }
+    })
+    gsap.from(".card1",{
+        translateX:"-700px",
+        scrollTrigger:{
+            trigger:".how",
+            start:"top 35%",
+            end:"top 0%",
+            scrub:true
+        }
+    })
+    gsap.from(".card3",{
+        translateX:"700px",
+        scrollTrigger:{
+            trigger:".how",
+            start:"top 40%",
+            end:"top 10%",
+            scrub:true
+        }
+    })
+    gsap.from(".card4",{
+        translateX:"700px",
+        scrollTrigger:{
+            trigger:".how",
+            start:"top 35%",
+            end:"top 0%",
+            scrub:true
+        }
+    })
+</script>
+
+
+<div class="learning">
+    <div class="image teacher">
+        <img src="assests/images/teacher.png" height="100%">
+    </div>
+    <div class="content teachercontent">
+        <p id="methods">Learning Methods</p>
+        <h2>Access to learning anytime and anywhere</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque fuga, consectetur blanditiis alias molestias distinctio ducimus totam adipisci itaque soluta optio necessitatibus! Sint exercitationem ullam voluptates animi quos dolorem voluptate.</p>
+   <ul>
+    <li>World class</li>
+    <li>Easy Learning</li>
+    <li>Flexible</li>
+    <li>Affordable</li>
+   </ul>
+   <div class="button2">
+   <button id="get-started">Get Started</button></div>
+   
+    </div>
+    <div class="ball111"></div>
+    <div class="ball222"></div>
+    <div class="ball333"></div>
+</div>
+
+
+<script>
+
+gsap.from(".teacher",{
+    scale:0,
+    scrollTrigger:{
+        trigger:".learning",
+        start:"top center",
+        end:"top 40%",
+        scrub:true
+    }
+})
+gsap.from(".teachercontent",{
+    translateX:"700px",
+    scrollTrigger:{
+        trigger:".learning",
+        start:"top 70%",
+        end:"top 40%",
+        scrub:true
+    }
+})
+
+</script>
+
+<div class="choose">
+    <h2><span>"</span>Choose the class that according to your need</h2>
+    <div class="cards2">
+
+        <div class="card11">
+<div class="image22"></div>
+<div class="content22">
+    <p>The level of creativity and student activity</p>
+</div>
+<div class="bottom">
+    <div class="students">
+       <p> 190 Students</p>
+    </div>
+    <div class="rating">
+        <p>4.9</p>
+    </div>
+    <div class="price">
+        <p>$124</p>
+    </div>
+</div>
+        </div>
+
+        <div class="card22">
+            <div class="image22 two"></div>
+<div class="content22">
+    <p>Knowledge of earth and world geography</p>
+</div>
+<div class="bottom">
+    <div class="students">
+       <p> 243 Students</p>
+    </div>
+    <div class="rating">
+        <p>4.3</p>
+    </div>
+    <div class="price">
+        <p>$248</p>
+    </div>
+</div>
+        </div>
+
+        <div class="card33">
+            <div class="image22 three"></div>
+<div class="content22">
+<p>Logic and general numeric calculation</p>
+</div>
+<div class="bottom">
+    <div class="students">
+       <p> 170 Students</p>
+    </div>
+    <div class="rating">
+        <p>4.1</p>
+    </div>
+    <div class="price">
+        <p>$195</p>
+    </div>
+</div>
+        </div>
+
+        <div class="card44">
+            <div class="image22 four"></div>
+<div class="content22">
+    <p>Knowledge and colouring picture book</p>
+</div>
+<div class="bottom">
+    <div class="students">
+       <p> 146 Students</p>
+    </div>
+    <div class="rating">
+        <p>4.4</p>
+    </div>
+    <div class="price">
+        <p>$263</p>
+    </div>
+</div>
+        </div>
+    </div>
+    <div class="view">
+        <button id="get-started">View more</button>
+    </div>
+</div>
+
+<script>
+
+gsap.from(".card11",{
+    translateY:"500px",
+    scrollTrigger:{
+        trigger:".choose",
+        start:"top 60%",
+        end:"top 40%",
+        scrub:true
+    }
+})
+gsap.from(".card22",{
+    translateY:"500px",
+    scrollTrigger:{
+        trigger:".choose",
+        start:"top 60%",
+        end:"top 40%",
+        scrub:true
+    }
+})
+gsap.from(".card33",{
+    translateY:"500px",
+    scrollTrigger:{
+        trigger:".choose",
+        start:"top 60%",
+        end:"top 40%",
+        scrub:true
+    }
+})
+gsap.from(".card44",{
+    translateY:"500px",
+    scrollTrigger:{
+        trigger:".choose",
+        start:"top 60%",
+        end:"top 40%",
+        scrub:true
+    }
+})
+
+</script>
+
+
+<div class="testimonial">
+    <div class="test-head">
+    <h2>What did the guardians say to us</h2>
+    <div class="arrow">
+        <div class="left-arrow">
+            <img src="assests/images/icons8-double-left-90 (1).png">
+        </div>
+        <div class="right-arrow">
+            <img src="assests/images/icons8-double-left-90.png">
+        </div>
+    </div>
+</div>
+    <div class="cards">
+        <div class="test1">
+            <div class="top">
+                <div class="image"></div>
+                <div class="name">
+                    <h3>Ashley Flores</h3>
+                    <P>Student Guardians</P>
+                </div>
+            </div>
+            <div class="center">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique numquam distinctio soluta. Ullam voluptates magni iste maxime eveniet eum labore totam in vitae, ab similique distinctio reiciendis tempore voluptatibus dolor.</p>
+            </div>
+            <div class="bottom">
+                <h4>written 2022</h4>
+            </div>
+        </div>
+
+
+        <div class="test2">
+    
+                <div class="top">
+                    <div class="image"></div>
+                    <div class="name">
+                        <h3>Katelynn Cox</h3>
+                        <P>Student Guardians</P>
+                    </div>
+                </div>
+                <div class="center">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique numquam distinctio soluta. Ullam voluptates magni iste maxime eveniet eum labore totam in vitae, ab similique distinctio reiciendis tempore voluptatibus dolor.</p>
+                </div>
+                <div class="bottom">
+                    <h4>written 2022</h4>
+                </div>
+        </div>
+    </div>
+    <div class="balll1"></div>
+    <div class="balll2"></div>
+</div>
+
+<script>
+
+gsap.from(".test1",{
+    translateX:"-700px",
+    scrollTrigger:{
+        trigger:".testimonial",
+        start:"top 60%",
+        end:"top 40%",
+        scrub:true,
+     
+    }
+})
+gsap.from(".test2",{
+    translateX:"700px",
+    scrollTrigger:{
+        trigger:".testimonial",
+        start:"top 60%",
+        end:"top 40%",
+        scrub:true,
+   
+    }
+})
+
+</script>
+
+
+<div class="form">
+    <h2>Enter your email to get the latets news</h2>
+    <p>Lorem ipsum dolor Rem veniam provided amet deleniti ullam et architecto fugit.</p>
+    <div class="input">
+        <input type="email">
+        <button class="submit">Submit</button>
+    </div>
+</div>
+
+
+
+<footer>
+<div class="logo-content">
+    <div class="top1">
+        <div class="image"></div>
+        <h2>Guide</h2>
+      
+    </div>
+    <div class="bottom1">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus deserunt at nam aliquam delectus nulla aut omnis ullam.</p>
+    </div>
+</div>
+
+
+<ul><li id="header">Programs</li>
+<li><a href>Brain Training</a></li>
+<li><a href>Creativity and Innovation</a></li>
+<li><a href>E Learning</a></li>
+<li><a href>School Holidays</a></li>
+<li><a href>Online Modulesg</a></li>
+</ul>
+
+
+
+<ul><li id="header">General</li>
+    <li><a href>Carrers</a></li>
+    <li><a href>About Us</a></li>
+    <li><a href>Respository</a></li>
+    <li><a href>Student Registration</a></li>
+    </ul>
+
+
+
+    <ul><li id="header">FAQ</li>
+        <li><a href>Online Chat</a></li>
+        <li><a href>Call Admin</a></li>
+        <li><a href>E Learning</a></li>
+        <li><a href>Leave Message</a></li>
+
+        </ul>
+
+
+</footer>
+<script>
+
+$("#course").click(()=>{
+    $("#sub").slideToggle();
+    // $("#c-a").css({"color":"black","fontWeight":"bold"})
+})
+
+</script>
+
+</body>
+</html>

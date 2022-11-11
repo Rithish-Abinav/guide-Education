@@ -1,0 +1,923 @@
+@font-face {
+    font-family: myfont;
+    src: url(Poppins-Medium.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: myfont;
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+    background-color: rgb(247, 247, 247);
+}
+.header{
+    height: 10vh;
+    padding-top: 2vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(247, 247, 247);
+    /* position: fixed;
+    top: 0;
+    z-index: 5;
+    box-shadow: 2px 2px 15px black; */
+}
+.logo{
+    height: 80%;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 80%;
+}
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    width: 100%;
+}
+.nav a{
+    text-decoration: none;
+    color: rgb(117, 117, 117);
+}
+#home{
+    color: black;
+    font-weight: bold;
+}
+.logo .image{
+    height: 100%;
+    width: 40%;
+    background-image: url(images/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.nav-btn{
+    width: 10%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-btn button{
+    padding: 2vh 5vh;
+    border-radius: 50px;
+    background-color: rgb(132, 0, 165);
+    border: none;
+    color: white;
+}
+.banner{
+position: relative;
+    width: 100vw;
+    padding: 7vh 0;
+    margin-top: 12vh;
+}
+.banner h1{
+    text-align: center;
+    font-size: 3.5rem;
+    width: 50vw;
+    margin: auto;
+  
+ 
+}
+.banner p{
+    width: 50vw;
+    margin: auto;
+    text-align: center;
+    padding: 5vh 0;
+}
+.buttons{
+    width: 30vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+#get-started,#watch-videos{
+    padding: 2vh 5vh;
+    border-radius: 50px;
+}
+#get-started{
+    background-color: rgb(132, 0, 165);
+    border: none;
+    color: white;
+}
+#watch-videos{
+    position: relative;
+    padding-left: 7vh;
+    border: none;
+    background: none;
+
+}
+#watch-videos::before{
+    content: "";
+    background-image:url(images/play.png);
+    background-size: contain;
+  position: absolute;
+  height: 30px ;
+  width: 30px;
+  left:5%;
+  top: 20%;
+
+}
+.images{
+    width: 80vw;
+    height: 60vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.image1{
+    height: 90%;
+    width: 20%;
+    background-image: url(images/image1.png);
+    background-position: center;
+    border-radius: 150px;
+    z-index: 4;
+}
+.image2{
+    height: 90%;
+    width: 20%;
+    background-image: url(images/image4.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-color: rgb(226, 223, 223); */
+    border-radius: 150px;
+    background-color: #90a8b2;
+    transform: translateY(30%);
+    z-index: 4;
+}
+.image3{
+    height: 90%;
+    width: 20%;
+    background-image: url(images/image2.png);
+    background-position: center;
+    border-radius: 150px;
+    background-color:#999696;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translateY(30%);
+    z-index: 4;
+}
+.image4{
+    height: 90%;
+    width: 20%;
+    background-image: url(images/image3.png);
+    background-position: center;
+    border-radius: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #90a8b2;
+    z-index: 4;
+}
+.companies{
+
+    width: 90vw;
+    height:7vh;
+    margin: auto;
+    margin-top: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.companies p{
+    width: 100%;
+    opacity: 70%;
+}
+.companies img{
+    height: 100%;
+}
+.company1{
+    width: 15%;
+    height: 100%;
+    background-color: rgb(230, 225, 225);
+   border-radius: 20px;
+   padding: 1vh;
+   display: flex;
+   justify-content: center;
+   opacity: 60%;
+}
+.company2{
+    width: 15%;
+    height: 100%;
+    background-color: rgb(230, 225, 225);
+    border-radius: 20px;
+    padding: 1vh;
+    display: flex;
+    justify-content: center;
+    opacity: 60%;
+}
+.company3{
+    width: 15%;
+    height: 100%;
+    background-color: rgb(230, 225, 225);
+    border-radius: 20px;
+    padding: 1vh;
+    display: flex;
+    justify-content: center;
+    opacity: 60%;
+}
+.company4{
+    width: 15%;
+    height: 100%;
+    background-color: rgb(230, 225, 225);
+    border-radius: 20px;
+    padding: 1vh;
+    display: flex;
+    justify-content: center;
+    opacity: 60%;
+}
+.company5{
+    width: 15%;
+    height: 100%;
+    background-color: rgb(230, 225, 225);
+    border-radius: 20px;
+    padding: 1vh;
+    display: flex;
+    justify-content: center;
+    opacity: 60%;
+}
+.ball1{
+    position: absolute;
+    height:30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color:rgb(204, 6, 6);
+    top: 27%;
+    left: 13%;
+}
+.ball2{
+    position: absolute;
+    height:20px;
+    width: 20px;
+    border-radius: 100%;
+    background-color: rgb(132, 0, 165);
+    top: 50%;
+    left: 5%;
+}
+.ball3{
+    position: absolute;
+    height:30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: rgb(250, 137, 9);
+    bottom: 20%;
+    left: 20%;
+}
+.ball4{
+    position: absolute;
+    height:30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: rgb(250, 137, 9);
+    top:20%;
+    right: 15%;
+}
+.ball5{
+    position: absolute;
+    height:15px;
+    width: 15px;
+    border-radius: 100%;
+    background-color: rgb(7, 146, 226) ;
+    top:45%;
+    right: 35%;
+}
+.ball6{
+    position: absolute;
+    height:35px;
+    width: 35px;
+    border-radius: 100%;
+    background-color: rgb(189, 42, 152);
+    top:60%;
+    right: 5%;
+}
+.ball7{
+    position: absolute;
+    height:15px;
+    width: 15px;
+    border-radius: 100%;
+    background-color:rgb(204, 6, 6);
+    top:75%;
+    right: 26%;
+}
+
+
+.how{
+    padding:20vh 0 10vh 0;
+    position: relative;
+}
+.how h2{
+    font-size: 2rem;
+}
+.how p{
+    text-align: center;
+    margin: 2vh 0;
+    font-size: 1.2rem;
+    
+}
+#how{
+    color:rgb(248, 9, 148);
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.how{
+width: 100vw;
+text-align: center;
+margin:auto;
+}
+.how .cards{
+    width: 80vw;
+    height: 50vh;
+    margin: auto;
+    margin-top: 5vh;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+  
+}
+.card1,.card2,.card3,.card4{
+    width: 19%;
+    height: 90%;
+    background-color:white;
+    padding:2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 20px;
+   box-shadow: 2px 2px 10px rgb(192, 190, 190);
+   z-index: 4;
+}
+.cards .image{
+    height: 17%;
+    border-radius: 10px;
+    width: 25%;
+    background-color: rgb(167, 4, 207);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cards h4{
+    font-size: 1.1rem;
+}
+.cards p{
+    font-size: 0.9rem;
+    text-align: left;
+}
+.cards img{
+    height: 90%;
+}
+.cards a{
+    text-decoration: none;
+}
+.card3 img{
+    height: 80%;
+}
+.card4 img{
+    height: 80%;
+}
+.card2 .image{
+    background-color: rgb(7, 146, 226) ;
+}
+.card3 .image{
+    background-color: rgb(250, 137, 9);
+}
+.card4 .image{
+    background-color:rgb(248, 9, 148);
+}
+.how .ball11{
+    position: absolute;
+    height:30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: rgb(250, 137, 9);
+    top: 20%;
+    left: 13%;
+}
+.how .ball22{
+    position: absolute;
+    height:20px;
+    width: 20px;
+    border-radius: 100%;
+    background-color: rgb(132, 0, 165);
+    top: 50%;
+    right:5%;
+}
+.how .ball33{
+    position: absolute;
+    height:30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color:rgb(204, 6, 6);
+    top: 28%;
+    right: 20%;
+} 
+.learning{
+    width: 80vw;
+    height: 80vh;
+    margin: auto;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.learning .image{
+    height: 100%;
+    width: 50%;
+
+}
+.learning img{
+    border-radius: 10px;
+}
+.learning .content{
+width: 50%;
+height: 85%;
+/* background-color: lightblue; */
+padding: 0 10vh;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+#methods{
+    color:rgb(248, 9, 148);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.learning .content h2{
+font-size: 2rem;
+}
+.learning ul{
+    width: 70%;
+    /* background-color: red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 2vh;
+    color: rgb(7, 146, 226) ;
+    margin-left: 2vw;
+}
+.learning ul li{
+    width: 50%;
+    text-align: left;
+}
+.ball111{
+    position: absolute;
+    height:30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: rgb(7, 146, 226);
+    top: 10%;
+    left: 0%;
+}
+.ball222{
+    position: absolute;
+    height:20px;
+    width: 20px;
+    border-radius: 100%;
+    background-color: rgb(132, 0, 165);
+    top: 23%;
+    right:2%;
+}
+.ball333{
+    position: absolute;
+    height:15px;
+    width: 15px;
+    border-radius: 100%;
+    background-color:rgb(204, 6, 6);
+   bottom: 15%;
+    right: 15%;
+} 
+.choose{
+    height: 90vh;
+    width: 100vw;
+    background-image: url(images/grid.png);
+    background-size: cover;
+    margin: 10vh 0;
+    padding: 5vh 0;
+    color: white;
+}
+.choose h2{
+    width: 30vw;
+    font-size: 2rem;
+    margin: auto;
+    text-align: center;
+}
+span{
+    font-size: 2rem;
+    color: rgb(7, 146, 226);;
+}
+.cards2{
+    height: 60%;
+    width: 98%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5vh;
+    color: rgb(43, 42, 42);
+}
+.card11
+{
+width: 20%;
+height: 90%;
+background-color: white;
+padding: 2vh;
+border-radius: 15px;
+
+}
+.card22{
+    width: 20%;
+    height: 90%;
+    background-color: white;
+    padding: 2vh;
+border-radius: 15px;
+}
+.card33{
+    width: 20%;
+    height: 90%;
+    background-color: white;
+    padding: 2vh;
+border-radius: 15px;
+}
+.card44{
+    width: 20%;
+    height: 90%;
+    background-color: white;
+    padding: 2vh;
+border-radius: 15px;
+}
+.image22{
+    height: 65%;
+    width: 100%;
+    background-image: url(images/kids1.webp);
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.content22{
+    height: 20%;
+    width: 100%;
+padding: 5% 0;
+color: black;
+font-size: 1.1rem;
+font-weight: bold;
+}
+.content22 p{
+    color: rgb(26, 26, 26);
+}
+.bottom{
+    width: 98%;
+    margin: auto;
+    height: 10%;
+    display: flex;
+}
+.students{
+    height: 100%;
+    width: 50%;
+}
+.students p{
+    font-size: 0.8rem;
+    position: relative;
+    text-align: center;
+}
+.students p::after{
+    content: "";
+    background-image: url(images/icons8-user-groups-64.png);
+    position: absolute;
+    background-size: contain;
+    width: 20%;
+    height: 100%;
+    background-repeat: no-repeat;
+    left: 0;
+}
+.rating{
+    width: 25%;
+    height: 100%;
+
+}
+.rating p{
+    font-size: 0.8rem;
+    position: relative;
+    text-align: center;
+}
+.rating p::after{
+    content: "";
+    background-image: url(images/icons8-star-90.png);
+    position: absolute;
+    background-size: contain;
+    width: 30%;
+    height: 100%;
+    background-repeat: no-repeat;
+    left: 0;
+}
+.price{
+    width: 25%;
+    height: 100%;
+    text-align: right;
+}
+.two{
+    background-image: url(images/kids2.webp);
+}
+.three{
+    background-image: url(images/kids3.webp);
+}
+.four{
+    background-image: url(images/kids4.webp);
+}
+.view{
+
+    margin: auto;
+    margin-top: 5vh;
+    width: 30vw;
+    text-align: center;
+}
+.testimonial{
+    width: 80vw;
+    margin: auto;
+    padding: 0 12vh;
+    position: relative;
+    margin-bottom: 10vh;
+
+}
+.testimonial h2{
+    font-size: 2rem;
+    width: 30%;
+}
+.testimonial .cards{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.test1,.test2{
+    height: 70%;
+    width: 42%;
+    padding: 2vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px 2px rgb(192, 190, 190);
+}
+.test1 .top{
+    height: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.test1 .top .image{
+    width: 20%;
+    height: 100%;
+    background-image: url(images/test1.png);
+    background-size: cover;
+    border-radius: 15px;
+}
+.test1 .top .name{
+    width: 78%;
+    height: 70%;
+}
+.test1 .center{
+    height: fit-content;
+}
+.test1 .bottom{
+    height: fit-content;
+ 
+    margin: 0;
+}
+.test2 .top{
+    height: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.test2 .top .image{
+    width: 20%;
+    height: 100%;
+    background-image: url(images/test2.png);
+    background-size: cover;
+    border-radius: 15px;
+}
+.test2 .top .name{
+    width: 78%;
+    height: 70%;
+}
+.test2 .center{
+    height: fit-content;
+}
+.test2 .bottom{
+    height: fit-content;
+
+    margin: 0;
+}
+.test-head{
+    height: 15vh;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+
+}
+.arrow{
+    display: flex;
+    width: 13%;
+height: 90%;
+    justify-content: space-around;
+    align-items: center;
+}
+.left-arrow,.right-arrow{
+    height:55%;
+    width: 36%;
+    border-radius: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:0px 0px 0px 2px black inset;
+
+}
+.left-arrow{
+    background-color: rgb(132, 0, 165);
+    box-shadow: none;
+}
+.right-arrow img{
+transform: scaleX(-1);
+}
+.arrow img{
+    height: 70%;
+}
+.balll1{
+    position: absolute;
+    height:30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: rgb(132, 0, 165);
+    bottom: -5%;
+    left: 3%;
+}
+.balll2{
+    position: absolute;
+    height:20px;
+    width: 20px;
+    border-radius: 100%;
+    background-color: rgb(7, 146, 226);
+    top: 23%;
+    right:2%;
+}
+.form{
+    height: 40vh;
+    padding: 20vh 0;
+    width: 80vw;
+
+    margin: auto;
+    background-image: url(images/grid.png);
+    background-size: cover;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+.form h2{
+width: 35%;
+text-align: center;
+margin: auto;
+font-size: 2rem;
+}
+.form p{
+    width: 40%;
+    font-size: 0.8rem;
+
+    text-align: center;
+    padding: 3vh 0;
+    margin: auto;
+    
+}
+.input{
+    width: 35%;
+    height: 20%;
+    background-color: white;
+    border-radius: 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.5vh 0 2vh;
+    align-items: center;
+    margin: auto;
+   
+}
+input{
+    height: 100%;
+    width: 70%;
+border: solid white 1px;
+outline: none;
+}
+
+.submit{
+    width: 30%;
+    height: 90%;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    background-color: rgb(132, 0, 165);
+}
+footer{
+    height: fit-content;
+    width: 80vw;
+    padding: 5vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-content{
+    height: 40%;
+    width: 20%;
+    
+}
+.top1{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+.top1 .image{
+width: 20%;
+background-image: url(images/logo.png);
+background-size: cover;
+   
+}
+.top1 h2{
+    width: 75%;
+}
+.bottom1{
+    height: 70%;
+
+    width: 100%;
+    padding: 2vh 0;
+}
+.bottom1 p{
+    font-size: 0.8rem;
+    color: rgb(117, 117, 117);
+}
+footer ul{
+width: 15%;
+list-style-type: none;
+}
+footer a{
+    text-decoration: none;
+    color: rgb(117, 117, 117);
+}
+footer #header{
+    margin-bottom: 1vh;
+    font-weight: bold;
+}
+.nav ul li{
+    padding-right: 4vh;
+   
+}
+#course{
+    position: relative;
+}
+#course::after{
+    content: "";
+    position: absolute;
+    height: 60%;
+    width: 20%;
+    right: 5%;
+    background-image: url(images/icons8-chevron-right-96.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 20%;
+    opacity: 60%;
+}
+#sub{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 8vw;
+    padding: 1vh;
+    text-align: left;
+    transform: translateX(-2vh) translateY(2vh);
+    background-color: white;
+border-radius: 5px;
+    border: solid gray 1px;
+    display: none;
+}
+#sub li{
+
+   line-height: 5vh;
+   width: fit-content;
+}

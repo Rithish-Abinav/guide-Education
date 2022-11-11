@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <style>
+        .box{
+            width: 80%;
+            height: 30vh;
+            display: flex;
+            justify-content: space-around;
+        }
+        .box1,.box2,.box3{
+            height: 100%;
+            width: 25%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+    <button>Click</button>
+
+    <script>
+        $(".box1").css({ "backgroundColor":"red"});
+        $(".box2").css({ "backgroundColor":"blue"});
+        $(".box3").css({ "backgroundColor":"black"});
+        $("button").click(()=>{
+            $(".box1").css({ "backgroundColor":"blue"});
+            $(".box2").css({ "backgroundColor":"black"});
+            $(".box3").css({ "backgroundColor":"red"});
+        })
+
+        $(".box1").click(()=>{
+            $(".box1").fadeOut();
+        })
+        $(".box2").click(()=>{
+            $(".box2").slideUp();
+        })
+        $(".box3").click(()=>{
+            $(".box3").hide();
+        })
+
+
+        $("h1:eq(1)")
+        $("h1:gt(1)")
+        $("h1:lt(3)")
+        $("h1:first()")
+        $("h1:last()")
+    </script>
+
+</body>
+</html>
