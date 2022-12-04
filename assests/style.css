@@ -51,6 +51,9 @@ body{
     text-decoration: none;
     color: rgb(117, 117, 117);
 }
+.nav a:hover{
+    color:black;
+}
 #home{
     color: black;
     font-weight: bold;
@@ -76,6 +79,9 @@ body{
     background-color: rgb(132, 0, 165);
     border: none;
     color: white;
+}
+.nav-btn button:hover{
+    transform:scale(1.02);
 }
 .banner{
 position: relative;
